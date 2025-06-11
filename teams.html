@@ -1,282 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Air-Space Control, Optimization, and Management Laboratory (ASCOM-LAB)
+    </title>
+    <meta
+      name="description"
+      content="To transform the space industry with AI, creating reliable, high-performance space control and optimization systems"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo/logo.png"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="ASCOM" />
+    <meta
+      property="og:description"
+      content="Air-Space Control, Optimization, and Management Laboratory"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <meta property="og:image" content="" />
 
-  <title>Air-Space Control, Optimization, and Management Laboratory (ASCOM-LAB)</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- <link rel="stylesheet" href="css/tailwind-runtime.css" /> -->
+    <link rel="stylesheet" href="css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      gtag("config", "G-");
+    </script>
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Ninestars
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <!--<h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1>-->
-        <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="index.html"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+  <body
+    class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] tw-text-black dark:tw-bg-black dark:tw-text-white"
+  >
+    <header
+      class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]"
+    >
+      <a
+        class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center"
+        href="index.html"
+      >
+        <div class="tw-h-[60px] tw-max-w-[100px]">
+          <img
+            src="./assets/logo/ascom-logo-dark.png"
+            alt="logo"
+            class="tw-object-contain tw-h-full tw-w-full dark:tw-hidden tw-block"
+          />
+          <img
+            src="./assets/logo/ascom-logo-light.png"
+            alt="logo"
+            class="tw-object-contain tw-h-full tw-w-full dark:tw-block tw-hidden"
+          />
+        </div>
+        <!-- <span class="tw-uppercase tw-text-base tw-font-medium">Pixa</span> -->
+      </a>
+      <div
+        class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+        id="collapsed-header-items"
+      >
+        <nav
+          class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+        >
+          <a class="header-links" href="index.html#about-us"> About Us </a>
+          <a class="header-links" href="index.html#projects"> Projects </a>
+          <a class="header-links" href="publications.html"> Publications </a>
+          <a class="header-links" href="teams.html"> Teams </a>
+        </nav>
+        <div
+          class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+        >
+          <button
+            type="button"
+            onclick="toggleMode()"
+            class="header-links tw-text-gray-600 dark:tw-text-gray-300"
+            title="toggle-theme"
+            id="theme-toggle"
+          >
+            <i class="bi bi-sun" id="toggle-mode-icon"></i>
+          </button>
+          <a
+            href="workshop.html"
+            aria-label="Workshop"
+            class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+          >
+            <span>Workshop</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
+      <button
+        class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
+        onclick="toggleHeader()"
+        aria-label="menu"
+        id="collapse-btn"
+      ></button>
+    </header>
 
-     <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          
-          <li><a class="nav-link scrollto" href="index.html#project">Projects</a></li>
-          <!--<li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#docking">Docking Operation</a></li>
-              <li><a href="#SSA">Space Situational Awareness</a></li>
-              <li><a href="#UAV">Unmanned Aerial Vehicle</a></li>
-              <li><a href="#GIS">GIS</a></li>
-            </ul>
-          </li>-->
+    <div class="tw-relative tw-w-full tw-min-h-[100vh] max-lg:tw-min-h-[80vh]">
+      <div
+        class="purple-bg-grad reveal-up tw-absolute tw-left-[15%] tw-top-[10%] tw-h-[200px] tw-w-[200px]"
+      ></div>
 
-          <li><a class="nav-link scrollto" href="publication.html">Publications</a></li>
-          
-          <li><a class="nav-link scrollto" href="workshops.html">Workshops</a></li>
-          <li><a class="nav-link scrollto" href="teams.html">Teams</a></li>
-          <!--<li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
+      <div
+        class="tw-container tw-mx-auto tw-px-4 tw-mt-36 max-lg:tw-mt-[100px]"
+      >
+        <div class="tw-mb-14">
+          <h2
+            class="tw-font-serif tw-text-center tw-text-5xl max-lg:tw-text-3xl tw-mb-2 tw-mt-4"
+          >
+            Teams
+          </h2>
+          <p
+            class="tw-text-center tw-font-light tw-text-gray-500 sm:tw-text-xl dark:tw-text-gray-400 tw-max-w-[640px] tw-mx-auto"
+          >
+            Our dedicated experts in aerospace engineering, data science, and
+            systems optimization collaborate to innovate and advance airspace
+            management technologies.
+          </p>
+        </div>
 
-          <!--<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <h3
+          class="reveal-up tw-text-3xl max-lg:tw-text-xl tw-text-center tw-leading-normal tw-uppercase tw-mb-20"
+        >
+          Researchers
+        </h3>
 
+        <div
+          class="tw-grid tw-gap-8 lg:tw-gap-16 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-mb-28"
+        >
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/j_tom.png"
+              alt="Patcharin Kamsing, Ph.D"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Patcharin Kamsing, Ph.D
+            </h3>
+            <p>(Head of Laboratory)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/profile.png"
+              alt="Paradech Dechpaiboonyos Avatar"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Paradech Dechpaiboonyos
+            </h3>
+            <!-- <p>CEO/Co-founder</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/profile.png"
+              alt="Chayakorn Intasan"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Chayakorn Intasan
+            </h3>
+            <!-- <p>CEO/Co-founder</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/peerapong.jpg"
+              alt="Bonnie Avatar"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Peerapong Torteeka, Ph.D
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/download-1.jpg"
+              alt="Wuttichai Boonpook, Ph.D"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Wuttichai Boonpook, Ph.D
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/p_riff.jpg"
+              alt="Shariff Manuthasna"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Shariff Manuthasna
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/Thaweerath.jpg"
+              alt="Thaweerath Phisannupawong"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Thaweerath Phisannupawong
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/warunyu.jpg"
+              alt="Warunyu Hematulin"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Warunyu Hematulin
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/nice-1.jpg"
+              alt="Tanatthep Jarawan"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Tanatthep Jarawan
+            </h3>
+            <p>(Guest researcher)</p>
+          </div>
+        </div>
+
+        <h3
+          class="reveal-up tw-text-3xl max-lg:tw-text-xl tw-text-center tw-leading-normal tw-uppercase tw-mb-20"
+        >
+          Alumni (academic year 2021)
+        </h3>
+
+        <div
+          class="tw-grid tw-gap-8 lg:tw-gap-16 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-mb-28"
+        >
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__58073093-1.jpg"
+              alt="Chairat Suparnunt"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Chairat Suparnunt
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/314456.jpg"
+              alt="Chon Boonvongsobhon"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Chon Boonvongsobhon
+            </h3>
+            <!-- <p>CEO/Co-founder</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__172785668-1.jpg"
+              alt="Farhaad Eounes Baig"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Farhaad Eounes Baig
+            </h3>
+            <!-- <p>CEO/Co-founder</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__6971424.jpg"
+              alt="Prachaya Leelalerthpat"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Prachaya Leelalerthpat
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/Untitled.jpg"
+              alt="Chittawan Hanjarat"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Chittawan Hanjarat
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__6979588.jpg"
+              alt="Kittiphan Junyiam"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Kittiphan Junyiam
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__6963363.jpg"
+              alt="Kittiphan Junyiam"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Pornpong Pasokpuckdee
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__6963336.jpg"
+              alt="Sittikorn Srisongkarm"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Sittikorn Srisongkarm
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/S__6963345.jpg"
+              alt="Warakot Kitcharoen"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Warakot Kitcharoen
+            </h3>
+            <!-- <p>(Guest researcher)</p> -->
+          </div>
+        </div>
+
+        <h3
+          class="reveal-up tw-text-3xl max-lg:tw-text-xl tw-text-center tw-leading-normal tw-uppercase tw-mb-20"
+        >
+          Alumni (academic year 2020)
+        </h3>
+
+        <div
+          class="tw-grid tw-gap-8 lg:tw-gap-16 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-mb-28"
+        >
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/warunyu.jpg"
+              alt="Warunyu Hematulin"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Warunyu Hematulin
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/Thanaporn.jpg"
+              alt="Thanaporn Somjit"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Thanaporn Somjit
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/nice-1.jpg"
+              alt="Tanatthep Jarawan"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Tanatthep Jarawan
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/ta.jpg"
+              alt="Tachodom Chooraks"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Tachodom Chooraks
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/pluem.jpg"
+              alt="Sookaseam Mungkhud"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Sookaseam Mungkhud
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/atin.jpg"
+              alt="Sitthirak Sangkarak"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Sitthirak Sangkarak
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+        </div>
+
+        <h3
+          class="reveal-up tw-text-3xl max-lg:tw-text-xl tw-text-center tw-leading-normal tw-uppercase tw-mb-20"
+        >
+          Alumni (academic year 2019)
+        </h3>
+
+        <div
+          class="tw-grid tw-gap-8 lg:tw-gap-16 sm:tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4 tw-mb-28"
+        >
+          <div class="tw-text-center tw-text-gray-500 dark:tw-text-gray-400">
+            <img
+              class="tw-mx-auto tw-mb-4 tw-w-36 tw-h-36 tw-rounded-full"
+              src="assets/images/teams/Thaweerath.jpg"
+              alt="Thaweerath Phisannupawong"
+            />
+            <h3
+              class="tw-mb-1 tw-text-2xl tw-font-bold tw-tracking-tight tw-text-gray-900 dark:tw-text-white"
+            >
+              Thaweerath Phisannupawong
+            </h3>
+            <!-- <p>(Head of Laboratory)</p> -->
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
 
-  <main id="main">
+    <footer
+      class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-container tw-mx-auto tw-text-black dark:tw-text-white max-md:tw-flex-col"
+    >
+      <div
+        class="tw-flex max-lg:tw-flex-col-reverse max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around max-lg:tw-px-10"
+      >
+        <div
+          class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-2 max-lg:tw-w-full"
+        >
+          <a href="#" class="tw-w-full tw-flex tw-flex-col tw-gap-6 tw-mb-4">
+            <img
+              src="./assets/logo/ascom-logo-dark.png"
+              alt="logo"
+              srcset=""
+              class="tw-max-w-[320px] dark:tw-hidden tw-block"
+            />
+            <img
+              src="./assets/logo/ascom-logo-light.png"
+              alt="logo"
+              srcset=""
+              class="tw-max-w-[320px] tw-hidden dark:tw-block"
+            />
+          </a>
+          <p>
+            CDG Room, Terminal 2 Building, International Academy of Aviation
+            Industry, King Mongkut's Institute of Technology Ladkrabang, 1 Soi
+            Chalongkrung 1. Ladkrabang, Ladkrabang. Bangkok, 10520, Thailand.
+          </p>
+          <p><b>Email</b>: ascomlab.space@gmail.com</p>
+          <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
+          <!-- <div class="tw-flex tw-gap-4 tw-text-lg">
+            <a href="https://github.com/PaulleDemon/" aria-label="Github">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <!--<section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
+            <a href="https://www.linkedin.com/" aria-label="Linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div> -->
         </div>
 
-      </div>
-    </section>--><!-- End Breadcrumbs Section -->
-
-    <section class="inner-page">
-      <div class="container">
-        
-         <h4 class="title"><a href="#">Research team</a></h4>
-         <p>
-           
-                1.Patcharin Kamsing, Ph.D(Head of Laboratory)
-                <br>2.Peerapong Torteeka, Ph.D(Guest researcher)
-                <br>3.Wuttichai Boonpook, Ph.D(Guest researcher)
-                <br>4.Shariff Manuthasna(Guest researcher)
-                <br>5.Thaweerath Phisannupawong(Guest researcher)
-                <br>6.Warunyu Hematulin(Guest researcher)
-        </p>
-      </div>
-    </section>
-
-
-      <section id="about" class="about">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-          
-            <p>
-               <b> Alumni (academic year 2022)</b>
-                <br>1.Paradech Dechpaiboonyos
-                <br>2.Chayakorn Intasan<br>
-               <b> Alumni (academic year 2020)</b>
-                <br>1.Warunyu Hematulin
-                <br>2.Thanaporn Somjit
-                <br>3.Tanatthep Jarawan
-                <br>4.Tachodom Chooraks
-                <br>5.Sookaseam Mungkhud
-                <br>6.Sitthirak Sangkarak
-            </p>
-           
-
-
-          </div>
-         <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-        
-                <p>
-                <b>Alumni (academic year 2021)</b>
-                    <br>1.Chairat Suparnunt
-                    <br>2.Chon Boonvongsobhon
-                    <br>3.Farhaad Eounes Baig
-                    <br>4.Prachaya Leelalerthpat
-                    <br>5.Chittawan Hanjarat
-                    <br>6.Kittiphan Junyiam
-                    <br>7.Pornpong Pasokpuckdee
-                    <br>8.Sittikorn Srisongkarm
-                    <br>9.Warakot Kitcharoen<br>
-                <b>Alumni (academic year 2019)</b>
-                    <br>1.Thaweerath Phisannupawong
-
-                 </p>
-            
-          </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ASCOM LAB</h3>
-            <p>
-              CDG Room, Terminal 2 Building, <br>
-              International Academy of Aviation Industry,<br>
-              King Mongkut's Institute of Technology Ladkrabang, <br>
-              1 Soi Chalongkrung 1. Ladkrabang,<br>
-              Ladkrabang. Bangkok, 10520, Thailand. <br><br>
-              <!--<strong>Phone:</strong> +1 5589 55488 55<br>-->
-              <strong>Email:</strong> ascomlab.space@gmail.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#project">Projects</a></li>
-              
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Projects</h4>
-            <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="https://satangspace.github.io/satellite-tracking/" target="_blank">Space Situation Awareness</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://next-ml-sandy.vercel.app/feature" target="_blank">Close-Proximity and Docking Operation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="UAV.html" target="_blank">Unmanned Aerial Vehicle</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="GIS.html" target="_blank">Geographic Information System</a></li>
-             
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <!--<p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>-->
-            <div class="social-links mt-3">
-               <a href="https://medium.com/@ascomlab.space" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://github.com/ascomlab" target="_blank" class="medium"><i class="bx bxl-medium"></i></a>
-             
+        <div
+          class="tw-flex max-lg:tw-flex-col tw-gap-6 tw-h-full tw-w-full tw-justify-around"
+        >
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Links</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="index.html#about-us" class="footer-link">About Us</a>
+              <a href="index.html#projects" class="footer-link">Projects</a>
+              <a href="publications.html" class="footer-link">Publication</a>
+              <a href="teams.html" class="footer-link">Teams</a>
             </div>
           </div>
 
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Our Projects</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="space-situation-awareness.html" class="footer-link"
+                >Space Situation Awareness</a
+              >
+              <a href="docking-operation.html" class="footer-link">
+                Close-Proximity and Docking Operation</a
+              >
+              <a href="uav.html" class="footer-link">
+                Unmanned Aerial Vehicle</a
+              >
+              <a href="geo-information-system.html" class="footer-link"
+                >Geographic Information System</a
+              >
+            </div>
+          </div>
+
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Social Networks</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a
+                href="https://github.com/ascomlab"
+                target="_blank"
+                class="footer-link"
+                >Github</a
+              >
+              <a
+                href="https://medium.com/@ascomlab.space"
+                target="_blank"
+                class="footer-link"
+                >Medium</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container py-4">
-      <div class="copyright">
-        <!--&copy; Copyright <strong><span>ASCOM LAB</span></strong>. All Rights Reserved-->
-        Made with &#10084;&#65039; by ASCOM LAB
+      <hr class="tw-mt-8" />
+      <div
+        class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center tw-text-[12px] tw-w-full tw-text-center tw-place-content-around"
+      >
+        <span>Copyright &#169; 2023-2025</span>
+        <span>Powered by <b>ASCOM</b></span>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer>
+  </body>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+    integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="./scripts/components.js"></script>
+  <script src="./index.js"></script>
 
-</body>
-
+  <!-- By Paul: https://github.com/PaulleDemon -->
 </html>

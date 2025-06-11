@@ -1,750 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Air-Space Control, Optimization, and Management Laboratory (ASCOM-LAB)
+    </title>
+    <meta
+      name="description"
+      content="To transform the space industry with AI, creating reliable, high-performance space control and optimization systems"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo/logo.png"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="ASCOM" />
+    <meta
+      property="og:description"
+      content="Air-Space Control, Optimization, and Management Laboratory"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/PaulleDemon" />
+    <meta property="og:image" content="" />
 
-  <title>Air-Space Control, Optimization, and Management Laboratory (ASCOM-LAB)</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- <link rel="stylesheet" href="css/tailwind-runtime.css" /> -->
+    <link rel="stylesheet" href="css/tailwind-build.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+      gtag("config", "G-");
+    </script>
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <body
+    class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] tw-text-black dark:tw-bg-black dark:tw-text-white"
+  >
+    <!-- <div class="tw-absolute tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-flex 
+                    tw-h-[100px] tw-w-full tw-max-w-[80%]">
+            <div class="header-gradient tw-h-full tw-w-full "></div>
+        </div> -->
 
-  <!-- =======================================================
-  * Template Name: Ninestars
-  * Updated: Jan 09 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <!--<h1 class="text-light"><a href="index.html"><span>ASCOM-LAB</span></a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          
-          <li><a class="nav-link scrollto" href="#project">Projects</a></li>
-          <!--<li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#docking">Docking Operation</a></li>
-              <li><a href="#SSA">Space Situational Awareness</a></li>
-              <li><a href="#UAV">Unmanned Aerial Vehicle</a></li>
-              <li><a href="#GIS">GIS</a></li>
-            </ul>
-          </li>-->
-
-          <li><a class="nav-link scrollto" href="publication.html">Publications</a></li>
-          
-          <li><a class="nav-link scrollto" href="workshops.html">Workshops</a></li>
-          <li><a class="nav-link scrollto" href="teams.html">Teams</a></li>
-         
-
-          <!--<li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>-->
-
-          <!--<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>ASCOM LAB</h1>
-          <!--<h2>Air-Space Control, Optimization, and Management Laboratory</h2>-->
-          <!--<div>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          </div>-->
+    <header
+      class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]"
+    >
+      <a
+        class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center"
+        href="index.html"
+      >
+        <div class="tw-h-[60px] tw-max-w-[100px]">
+          <img
+            src="./assets/logo/ascom-logo-dark.png"
+            alt="logo"
+            class="tw-object-contain tw-h-full tw-w-full dark:tw-hidden tw-block"
+          />
+          <img
+            src="./assets/logo/ascom-logo-light.png"
+            alt="logo"
+            class="tw-object-contain tw-h-full tw-w-full dark:tw-block tw-hidden"
+          />
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        <!-- <span class="tw-uppercase tw-text-base tw-font-medium">Pixa</span> -->
+      </a>
+      <div
+        class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+        id="collapsed-header-items"
+      >
+        <nav
+          class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+        >
+          <a class="header-links" href="#about-us"> About Us </a>
+          <a class="header-links" href="#projects"> Projects </a>
+          <a class="header-links" href="publications.html"> Publications </a>
+          <a class="header-links" href="teams.html"> Teams </a>
+        </nav>
+        <div
+          class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+        >
+          <button
+            type="button"
+            onclick="toggleMode()"
+            class="header-links tw-text-gray-600 dark:tw-text-gray-300"
+            title="toggle-theme"
+            id="theme-toggle"
+          >
+            <i class="bi bi-sun" id="toggle-mode-icon"></i>
+          </button>
+          <a
+            href="workshop.html"
+            aria-label="Workshop"
+            class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+          >
+            <span>Wrokshop</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
         </div>
       </div>
-    </div>
+      <button
+        class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
+        onclick="toggleHeader()"
+        aria-label="menu"
+        id="collapse-btn"
+      ></button>
+    </header>
 
-  </section><!-- End Hero -->
+    <section
+      class="hero-section tw-relative tw-mt-36 tw-flex tw-min-h-[50vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
+      id="hero-section"
+    >
+      <div
+        class="hero-bg-gradient tw-relative tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-p-4"
+      >
+        <div
+          class="purple-bg-grad reveal-up tw-absolute tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
+        ></div>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-   <section id="about" class="about">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+        <div
+          class="tw-flex tw-flex-col tw-min-h-[60vh] max-md:tw-min-h-0 tw-place-content-center tw-items-center"
+        >
+          <h2
+            class="reveal-up tw-text-center tw-text-5xl tw-font-semibold tw-uppercase tw-leading-[64px] max-lg:tw-text-4xl max-md:tw-text-2xl max-md:tw-leading-snug tw-container tw-max-w-[1280px]"
+          >
+            Air-Space Control, Optimization, and Management Laboratory
+          </h2>
+          <div
+            class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
+          >
+            To transform the space industry with AI, creating reliable,
+            high-performance space control and optimization systems
           </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">About Us</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
-              Air-Space Control, Optimization, and Management Laboratory (ASCOM-LAB) was 
-              founded in 2019 by lecturers and students from the Department of Aeronautical
-              Engineering, International Academy of Aviation Industry, King Mongkut's Institute 
-              of Technology Ladkrabang, Bangkok, Thailand with potentials to have research 
-              cooperations with both private and government organizations in and out of Thailand.
-              We are researchers and developers of the frontier intelligent aerospace technology.
-              We are challenged by the detailed simulation and the complex computation of aerospace e
-              ngineering problems. Our mission is to develop reliable and high-performance Air-Space control,
-              optimization, and management systems with practical implementations of the advanced computerized method.
-            </p>
 
-            <!--<div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+          <div class="reveal-up carousel-container tw-mt-10 max-md:tw-mt-2">
+            <div
+              class="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+            >
+              <!-- add the brands using your app  -->
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-1.png"
+                  alt="Google"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
               </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>-->
-
-
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-2.png"
+                  alt="Microsoft"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-3.png"
+                  alt="Adobe"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-4.png"
+                  alt="Airbnb"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <!-- 2nd loop -->
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-1.png"
+                  alt="Google"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-2.png"
+                  alt="Microsoft"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-3.png"
+                  alt="Adobe"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
+              <div
+                class="carousel-img tw-h-[72px] tw-w-[150px] max-md:tw-h-[48px] max-md:tw-w-[100px]"
+              >
+                <img
+                  src="./assets/images/brand-logos/client-4.png"
+                  alt="Airbnb"
+                  class="tw-h-full tw-w-full tw-object-contain"
+                  srcset=""
+                />
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-        <!-- ======= About Section ======= -->
-       <!-- <section id="SSA" class="about">
-          <div class="container">
-    
-            <div class="row justify-content-between">
-              <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-                <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
-              </div>
-              <div class="col-lg-6 pt-5 pt-lg-0">
-                <h3 data-aos="fade-up">Voluptatem dignissimos provident quasi</h3>
-                <p data-aos="fade-up" data-aos-delay="100">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+    <section
+      class="tw-relative tw-flex tw-w-full tw-min-h-[100vh] max-lg:tw-min-h-[5vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+      id="about-us"
+    >
+      <div
+        class="tw-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[900px] tw-gap-4 tw-p-4"
+      >
+        <div
+          class="purple-bg-grad reveal-up tw-absolute tw-right-[20%] tw-top-[20%] tw-h-[200px] tw-w-[200px]"
+        ></div>
+        <h2
+          class="reveal-up tw-text-5xl max-lg:tw-text-3xl tw-text-center tw-leading-normal tw-uppercase"
+        >
+          <span class="tw-font-semibold">About Us</span>
+          <br />
+          <span class="tw-font-serif">ASCOM - Laboratory</span>
+        </h2>
+        <p
+          class="reveal-up tw-mt-8 tw-max-w-[650px] tw-text-gray-900 dark:tw-text-gray-200 tw-text-center max-md:tw-text-sm"
+        >
+          was founded in 2019 by lecturers and students from the Department of
+          Aeronautical Engineering, International Academy of Aviation Industry,
+          King Mongkut's Institute of Technology Ladkrabang, Bangkok, Thailand
+          with potentials to have research cooperations with both private and
+          government organizations in and out of Thailand. We are researchers
+          and developers of the frontier intelligent aerospace technology. We
+          are challenged by the detailed simulation and the complex computation
+          of aerospace e ngineering problems. Our mission is to develop reliable
+          and high-performance Air-Space control, optimization, and management
+          systems with practical implementations of the advanced computerized
+          method.
+        </p>
+        <div class="reveal-up tw-flex tw-mt-8">
+          <a
+            href="teams.html"
+            rel="noopener"
+            class="tw-shadow-md hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white tw-rounded-md"
+          >
+            Check out our team
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+      id="projects"
+    >
+      <div
+        class="tw-mt-32 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5"
+      >
+        <div
+          class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+        >
+          <h2 class="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2">
+            Projects
+          </h2>
+        </div>
+        <div
+          class="tw-mt-6 tw-flex tw-flex-col tw-max-w-[1150px] max-lg:tw-max-w-full tw-h-full tw-p-4 max-lg:tw-place-content-center tw-gap-8"
+        >
+          <div
+            class="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-3 tw-gap-8 tw-place-content-center tw-auto-rows-auto"
+          >
+            <div
+              class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full"
+            >
+              <a
+                href="space-situation-awareness.html"
+                class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
+              >
+                <div
+                  class="tw-overflow-hidden tw-w-full tw-min-h-[180px] tw-h-[180px]"
+                >
+                  <img
+                    src="./assets/images/home/api.png"
+                    class="tw-w-full tw-object-contain tw-h-auto"
+                    alt="unified interface"
+                  />
+                  <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                </div>
+                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  Space Situation Awareness
+                </h2>
+                <p
+                  class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200 tw-overflow-hidden"
+                >
+                  The project aims to implement an optical telescope in Thailand
+                  to enhance the accuracy of orbital determination for space
+                  objects.
                 </p>
-                <div class="row">
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris nisi</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
+                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                  <span>Learn more</span>
+                  <i
+                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
+                  ></i>
                 </div>
-              </div>
+              </a>
             </div>
-    
-          </div>
-        </section>--><!-- End About Section -->
 
-            <!-- ======= About Section ======= -->
-    <!--<section id="UAV" class="about">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Voluptatem dignissimos provident quasi</h3>
-            <p data-aos="fade-up" data-aos-delay="100">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-            </p>
-            <div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>--><!-- End About Section -->
-
-        <!-- ======= About Section ======= -->
-       <!--<section id="GIS" class="about">
-          <div class="container">
-    
-            <div class="row justify-content-between">
-              <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-                <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
-              </div>
-              <div class="col-lg-6 pt-5 pt-lg-0">
-                <h3 data-aos="fade-up">Voluptatem dignissimos provident quasi</h3>
-                <p data-aos="fade-up" data-aos-delay="100">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            <div
+              class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full"
+            >
+              <a
+                href="uav.html"
+                class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
+              >
+                <div
+                  class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/home/api.png"
+                    alt="API"
+                    class="tw-w-full tw-h-auto tw-object-contain"
+                  />
+                  <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                </div>
+                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  Unmanned Aerial Vehicle
+                </h2>
+                <p
+                  class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200 tw-overflow-hidden"
+                >
+                  A cooperative method utilizing multiple UAVs with Pixhawk
+                  flight control is being developed. Additionally, there are
+                  plans to implement Pixhawk for other applications in the near
+                  future.
                 </p>
-                <div class="row">
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris nisi</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                  </div>
+                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                  <span>Learn more</span>
+                  <i
+                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
+                  ></i>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full"
+            >
+              <a
+                href="geo-information-system.html"
+                class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
+              >
+                <div
+                  class="tw-w-full tw-flex tw-place-contet-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden"
+                >
+                  <img
+                    src="./assets/images/home/integrations1.png"
+                    class="tw-w-full tw-h-auto tw-object-contain"
+                    alt="Prebuilt integrations"
+                  />
+                </div>
+                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  Geographic Information System
+                </h2>
+                <p
+                  class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200 tw-overflow-hidden"
+                >
+                  Deploying satellite images, UAV imagery, and IoT sensors to
+                  support smart farming initiatives.
+                </p>
+                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                  <span>Learn more</span>
+                  <i
+                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
+                  ></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="reveal-up tw-w-full md:tw-h-[350px] max-md:tw-min-h-[350px] tw-flex"
+          >
+            <a
+              href="docking-operation.html"
+              class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex max-md:tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
+            >
+              <div
+                class="tw-text-6xl tw-overflow-hidden tw-rounded-xl tw-w-full tw-h-full max-md:tw-h-[180px]"
+              >
+                <img
+                  src="./assets/images/dragon-docking.jpg"
+                  class="tw-w-full tw-object-contain tw-h-full"
+                  alt="Dragon Docking Operation"
+                />
+                <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+              </div>
+              <div class="tw-flex tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  Close-Proximity and Docking Operation
+                </h2>
+                <p
+                  class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200 tw-overflow-hidden"
+                >
+                  This process entails aligning and connecting two spacecraft in
+                  orbit. While automated systems typically assist with the
+                  maneuver, manual control can also be required. The project
+                  utilized vision-based pose estimation to achieve precise
+                  predictions of spacecraft positioning.
+                </p>
+                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                  <span>Learn more</span>
+                  <i
+                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
+                  ></i>
                 </div>
               </div>
-            </div>
-    
-          </div>
-        </section>--> <!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="project" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-         <!-- <h2>Projects</h2>-->
-          <p>Projects</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="https://satangspace.github.io/website/" target="_blank">Space Situation Awareness</a></h4>
-              <p class="description">The project aims to implement an optical telescope 
-              in Thailand to enhance the accuracy of orbital determination for space objects.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="docking.html" target="_blank">Close-Proximity and Docking Operation</a></h4>
-              <p class="description">This process entails aligning and connecting two spacecraft in orbit.
-              While automated systems typically assist with the maneuver, manual control can also be required. 
-              The project utilized vision-based pose estimation to achieve precise predictions of spacecraft positioning.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="UAV.html" target="_blank">Unmanned Aerial Vehicle</a></h4>
-              <p class="description">A cooperative method utilizing multiple UAVs with Pixhawk flight control is being developed. 
-              Additionally, there are plans to implement Pixhawk for other applications in the near future.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="GIS.html" target="_blank">Geographic Information System</a></h4>
-              <p class="description">Deploying satellite images, UAV imagery, and IoT sensors to support smart farming initiatives.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!--<section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Check out our beautifull portfolio</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Portfolio Section -->
-
-   
-
-    <!-- ======= Team Section ======= -->
-   <!--<section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p>Our team is always here to help</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--> <!-- End Team Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-         <!--<h2>Partners</h2>--> 
-          <p>Supporters</p>
-        </div>
-
-        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-         
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.jpg" class="img-fluid" alt=""></div>
-            <!--<div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>-->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Contact Us Section ======= -->
-   <!-- <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact Us</h2>
-          <p>Contact us the get started</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Contact Us Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <!--<div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            </a>
           </div>
         </div>
       </div>
-    </div>-->
+    </section>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <!-- <section
+      class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+      id="publications"
+    >
+      <h3 class="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+        Read Our Research
+      </h3>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ASCOM LAB</h3>
-            <p>
-              CDG Room, Terminal 2 Building, <br>
-              International Academy of Aviation Industry,<br>
-              King Mongkut's Institute of Technology Ladkrabang, <br>
-              1 Soi Chalongkrung 1. Ladkrabang,<br>
-              Ladkrabang. Bangkok, 10520, Thailand. <br><br>
-              
-              <!--<strong>Phone:</strong> +1 5589 55488 55<br>-->
-              <strong>Email:</strong> ascomlab.space@gmail.com<br>
-            </p>
+      <div
+        class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+      >
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="./assets/images/home/article1.png"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#project">Projects</a></li>
-             
-            </ul>
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Machine learning
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              Jul, 17, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Latest AI tools
+          </h3>
+        </a>
+
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="./assets/images/home/article2.jpg"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Projects</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://satangspace.github.io/satellite-tracking/" target="_blank">Space Situation Awareness</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://next-ml-sandy.vercel.app/feature" target="_blank">Close-Proximity and Docking Operation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="UAV.html" target="_blank">Unmanned Aerial Vehicle</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="GIS.html" target="_blank">Geographic Information System</a></li>
-             
-            </ul>
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Announcement
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              June, 22, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Pixa Unveils new technology
+          </h3>
+        </a>
+
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="./assets/images/home/article3.png"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <!--<p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>-->
-            <div class="social-links mt-3">
-              <a href="https://medium.com/@ascomlab.space" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://github.com/ascomlab" target="_blank" class="medium"><i class="bx bxl-medium"></i></a>
-             
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Announcement
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              Apr, 27, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Launching Pixa playground
+          </h3>
+        </a>
+      </div>
+    </section> -->
+
+    <section
+      class="tw-relative tw-flex tw-p-2 tw-w-full tw-min-h-[60vh] max-md:tw-min-h-0 tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+    >
+      <div
+        class="purple-bg-grad max-md:tw-hidden reveal-up tw-absolute tw-top-14 tw-left-[8%] tw-h-[150px] tw-w-[150px] tw-rounded-full"
+      ></div>
+      <div
+        class="reveal-up tw-w-full tw-h-full tw-min-h-[450px] max-lg:tw-max-w-full tw-rounded-md lg:tw-py-[5%] tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4"
+      >
+        <h3
+          class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal"
+        >
+          Join our workshop now!
+        </h3>
+
+        <div class="tw-mt-8 tw-relative tw-flex max-lg:tw-flex-col tw-gap-5">
+          <a
+            href="workshop.html"
+            class="btn reveal-up !tw-rounded-full !tw-p-4 tw-font-medium"
+          >
+            Go to Workshop
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section
+      class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+    >
+      <div
+        class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-bg-[#F6F7FB] dark:tw-bg-[#171717] tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+      >
+        <div class="tw-flex tw-flex-col max-lg:tw-text-center tw-gap-1">
+          <h2
+            class="tw-text-2xl tw-text-gray-800 dark:tw-text-gray-200 max-md:tw-text-xl"
+          >
+            Join our newsletter
+          </h2>
+          <div class="tw-text-gray-700 dark:tw-text-gray-300">
+            Get product insights and updates.
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+        >
+          <input
+            type="email"
+            class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+            placeholder="email"
+          />
+          <a
+            class="btn !tw-rounded-full !tw-border-[1px] !tw-text-black !tw-border-solid !tw-border-black dark:!tw-text-white dark:!tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+            href=""
+          >
+            Signup
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <footer
+      class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-container tw-mx-auto tw-text-black dark:tw-text-white max-md:tw-flex-col"
+    >
+      <div
+        class="tw-flex max-lg:tw-flex-col-reverse max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around max-lg:tw-px-10"
+      >
+        <div
+          class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-2 max-lg:tw-w-full"
+        >
+          <a href="#" class="tw-w-full tw-flex tw-flex-col tw-gap-6 tw-mb-4">
+            <img
+              src="./assets/logo/ascom-logo-dark.png"
+              alt="logo"
+              srcset=""
+              class="tw-max-w-[320px] dark:tw-hidden tw-block"
+            />
+            <img
+              src="./assets/logo/ascom-logo-light.png"
+              alt="logo"
+              srcset=""
+              class="tw-max-w-[320px] tw-hidden dark:tw-block"
+            />
+          </a>
+          <p>
+            CDG Room, Terminal 2 Building, International Academy of Aviation
+            Industry, King Mongkut's Institute of Technology Ladkrabang, 1 Soi
+            Chalongkrung 1. Ladkrabang, Ladkrabang. Bangkok, 10520, Thailand.
+          </p>
+          <p><b>Email</b>: ascomlab.space@gmail.com</p>
+          <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
+          <!-- <div class="tw-flex tw-gap-4 tw-text-lg">
+            <a href="https://github.com/PaulleDemon/" aria-label="Github">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://twitter.com/pauls_freeman" aria-label="Twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" aria-label="Linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div> -->
+        </div>
+
+        <div
+          class="tw-flex max-lg:tw-flex-col tw-gap-6 tw-h-full tw-w-full tw-justify-around"
+        >
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Links</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="index.html#about-us" class="footer-link">About Us</a>
+              <a href="index.html#projects" class="footer-link">Projects</a>
+              <a href="publications.html" class="footer-link">Publication</a>
+              <a href="teams.html" class="footer-link">Teams</a>
             </div>
           </div>
 
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Our Projects</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="space-situation-awareness.html" class="footer-link"
+                >Space Situation Awareness</a
+              >
+              <a href="docking-operation.html" class="footer-link">
+                Close-Proximity and Docking Operation</a
+              >
+              <a href="uav.html" class="footer-link">
+                Unmanned Aerial Vehicle</a
+              >
+              <a href="geo-information-system.html" class="footer-link"
+                >Geographic Information System</a
+              >
+            </div>
+          </div>
+
+          <div class="tw-flex tw-h-full tw-w-[240px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl tw-font-semibold">Social Networks</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a
+                href="https://github.com/ascomlab"
+                target="_blank"
+                class="footer-link"
+                >Github</a
+              >
+              <a
+                href="https://medium.com/@ascomlab.space"
+                target="_blank"
+                class="footer-link"
+                >Medium</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container py-4">
-      <div class="copyright">
-        <!--&copy; Copyright <strong><span>ASCOM LAB</span></strong>. All Rights Reserved-->
-        Made with &#10084;&#65039; by ASCOM LAB
+      <hr class="tw-mt-8" />
+      <div
+        class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center tw-text-[12px] tw-w-full tw-text-center tw-place-content-around"
+      >
+        <span>Copyright &#169; 2023-2025</span>
+        <span>Powered by <b>ASCOM</b></span>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer>
+  </body>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+    integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+    integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+    integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="./scripts/components.js"></script>
+  <script src="./index.js"></script>
 
-</body>
-
+  <!-- By Paul: https://github.com/PaulleDemon -->
 </html>
